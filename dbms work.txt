@@ -1,0 +1,85 @@
+/*
+1. 요구사항
+   유치원을 하려고 하는데, 아이들이 체험학습 프로그램을 신청해야 합니다.
+   아이들 정보는 이름, 나이, 성별이 필요하고 학부모는 이름, 나이, 주소, 전화번호, 성별이 필요해요
+   체험학습은 체험학습 제목, 체험학습 내용, 이벤트 이미지 여러 장이 필요합니다.
+   아이들은 여러 번 체험학습에 등록할 수 있어요.
+    
+2. 개념 모델링
+		아이들			학부모		체험학습		체험학습-아이들
+	=================================================================
+		아이들pk			학부모PK		체험학습PK	체험학습-아이들PK
+	==================================================================
+		아이들 정보		학부모 정보	체험학습 정보	체험학습-아이들 정보
+		학부모FK									체험학습 FK
+												아이들 FK
+
+
+3. 논리 모델링
+4. 물리 모델링
+PARENTS
+------------
+ID PK
+-------------
+INFO 
+
+CHILD
+--------------
+ID PK
+---------------
+INFO
+PARENTS ID FK
+
+PICNIC
+--------------
+ID PK
+----------------
+INFO
+
+PICNIC-CHILD
+--------------
+ID PK
+------------------
+PICNIC FK
+CHILD FK
+
+
+5. 구현
+*/
+CREATE TABLE TBL_PARENTS(
+ID NUMBER CONSTRAINT PK_PARENTS PRIMARY KEY,
+PARENTS_NAME VARCHAR2(255) NOT NULL,
+PARENTS_AGE VARCHAR2(255) NOT NULL,
+PARENTS_ADDRESS VARCHAR2(255) NOT NULL,
+PARENTS_PHONE VARCHAR2(255) NOT NULL,
+PARENTS_GENDER VARCHAR2(255) NOT NULL
+);
+
+
+
+CREATE TABLE TBL_CHILD(
+ID NUMBER CONSTRAINT PK_CHILD PRIMARY KEY,
+CHILD_NAME VARCHAR2(255) NOT NULL,
+CHILD_AGE VARCHAR2(255) NOT NULL,
+CHILD_GENDER VARCHAR2(255) NOT NULL,
+PARENTS_ID NUMBER NOT NULL,
+CONSTRAINT FK_CHILD_PARENTS FOREIGN KEY(PARENTS_ID)
+   REFERENCES TBL_PARENTS(ID)
+);
+
+CREATE TABLE TBL_PICNIC(
+ID NUMBER CONSTRAINT PK_PICNIC PRIMARY KEY,
+PICNIC_TITLE VARCHAR2(255) NOT NULL,
+PICNIC_INFO VARCHAR2(255) NOT NULL,
+PICNIC_IMAGE VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE TBL_PICNIC_CHILD(
+ID NUMBER CONSTRAINT PK_PICNIC_CHILD PRIMARY KEY,
+CHILD_ID NUMBER NOT NULL,
+CONSTRAINT FK_PICNIC_CHILD_CHILD FOREIGN KEY(CHILD_ID)
+   REFERENCES TBL_CHILD(ID),
+PICNIC_ID NUMBER NOT NULL,
+CONSTRAINT FK_PICNIC_CHILD_PICNIC FOREIGN KEY(PICNIC_ID)
+   REFERENCES TBL_PICNIC(ID)
+);
