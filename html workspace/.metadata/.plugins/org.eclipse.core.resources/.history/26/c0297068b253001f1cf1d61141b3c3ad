@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 블록 요소</title>
+</head>
+<body>
+<button>BOTTON1</button>
+<button>BOTTON2</button>
+</body>
+</html>

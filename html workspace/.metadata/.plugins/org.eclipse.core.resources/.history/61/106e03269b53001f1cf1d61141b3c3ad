@@ -1,0 +1,48 @@
+<!--
+   테이블(table)
+   여러 종류의 데이터가 행과 열로 정리된 표
+   
+   <table>
+      <tr>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </table>
+--><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지태그</title>
+</head>
+<body>
+<table>
+      <tr>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </table>
+
+</body>
+</html>
