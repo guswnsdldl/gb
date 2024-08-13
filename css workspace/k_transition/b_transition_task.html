@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition실습</title>
+        <style>
+            div:nth-child(1) {
+                width: 200px;
+                height: 100px;
+                background-color: red;
+                transition-property: background-color, width, opacity, transform;
+                transition-duration: 1s, 1s, 1s, 1s;
+                transition-delay: 0s, 0s, 1s, 0s;
+            }
+            div:nth-child(1):hover {
+                background-color: blue;
+                width: 600px;
+                /* 투명도: 100%가 원본 */
+                opacity: 20%;
+                transform: translateX(40px);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

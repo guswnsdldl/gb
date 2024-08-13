@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-eco.css"
+            rel="stylesheet"
+        />
+        <title>회원가입 창 만들기</title>
+        <style>
+            #back {
+                font-family: "NanumGothicEco";
+                font-family: "NanumGothicEcoBold";
+                font-family: "NanumGothicEcoExtraBold";
+            }
+
+            #back {
+                margin: auto;
+                width: 1000px;
+                height: 1000px;
+                background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160828_197%2Fhappy_lstarl_1472356163840M0rFU_JPEG%2FNaverBlog_20160828_124923_26.jpg&type=ofullfill340_600_png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: relative;
+            }
+            #main {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                top: 70px;
+                translate: calc(50%);
+                width: 500px;
+                height: 800px;
+                border: 1px solid blue;
+            }
+            form {
+                width: 500px;
+                height: 800px;
+            }
+            #ipe {
+                left: 75px;
+                top: 50px;
+                flex-direction: column;
+                width: 350px;
+                height: 200px;
+                border: 1px solid gray;
+                position: absolute;
+            }
+            .ipe {
+                display: flex;
+                width: 150px;
+                height: 66px;
+                border: 0.5px;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="back">
+            <div id="main">
+                <form action="">
+                    <div id="ipe">
+                        <div class="ipe">
+                            <h3>아이디:</h3>
+                            <input
+                                type="text"
+                                name="user-id"
+                                placeholder="아이디"
+                                required
+                            />
+                        </div>
+                        <div class="ipe">
+                            <input
+                                type="text"
+                                name="user-id"
+                                placeholder="아이디"
+                                required
+                            />
+                        </div>
+                        <div class="ipe"></div>
+                    </div>
+                    <div id="gender,phone,foriegner">
+                        <div class="gpf"></div>
+                        <div class="gpf"></div>
+                        <div class="gpf"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

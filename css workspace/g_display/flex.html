@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flex</title>
+        <style>
+            body {
+                font-size: 35px;
+            }
+
+            #table {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            div.row {
+                display: flex;
+            }
+
+            div.row div {
+                padding: 10px;
+                border: 1px solid black;
+                border-collapse: collapse;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 3행 4열 -->
+        <div id="table">
+            <div class="row">
+                <div>1열</div>
+                <div>2열</div>
+                <div>3열</div>
+                <div>4열</div>
+            </div>
+            <div class="row">
+                <div>1열</div>
+                <div>2열</div>
+                <div>3열</div>
+                <div>4열</div>
+            </div>
+            <div class="row">
+                <div>1열</div>
+                <div>2열</div>
+                <div>3열</div>
+                <div>4열</div>
+            </div>
+        </div>
+    </body>
+</html>

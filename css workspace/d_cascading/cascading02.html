@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>스타일 우선 순위</title>
+        <style>
+            p {
+                color: orange;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .summer {
+                background-color: yellow;
+            }
+
+            /* 여름을 제외한 나머지 p태그의 글자색을 녹색으로 변경 */
+            .green-text {
+                color: green;
+            }
+
+            /* 여름의 기본 배경색을 핑크색으로 변경 */
+            p.summer {
+                background-color: pink;
+            }
+
+            /* 여름의 배경색을 파란색으로 변경 */
+            #summer-blue {
+                background-color: blue;
+            }
+
+            /* 봄과 여름에만 글자색을 핫핑크색으로 변경 */
+
+            p.spring {
+                color: hotpink;
+            }
+            p.summer {
+                color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="spring green-text">봄</p>
+        <p id="summer-blue" class="summer">여름</p>
+        <p class="fall green-text">가을</p>
+        <p class="winter green-text">겨울</p>
+    </body>
+</html>

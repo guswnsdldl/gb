@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>바깥 여백</title>
+        <style>
+            body {
+                font-size: 35px;
+            }
+            #div1 {
+                /* 상하좌우 4방향 모두 30px 적용 */
+                margin: 30px;
+                border: 1px solid black;
+            }
+
+            #div2 {
+                /* 위 60px, 아래 30px */
+                /* 순서대로 위, 오른쪽, 아래, 왼쪽 */
+                margin: 60px 0 30px 0;
+                border: 1px solid #e10;
+            }
+
+            #div3 {
+                /* 위, 아래: 20px, 왼쪽, 오른쪽: 30px */
+                /* 순서대로 위-아래, 왼쪽-오른쪽 */
+                margin: 20px 30px;
+                border: 1px solid hotpink;
+            }
+
+            #div-wrap {
+                display: flex;
+            }
+
+            #div4 {
+                margin-top: 0;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+                border: 1px solid brown;
+            }
+
+            #div5 {
+                margin-left: 30px;
+                border: 1px solid yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="div1">안녕하세요 DIV1입니다.</div>
+            <div id="div2">안녕하세요 DIV2입니다.</div>
+            <div id="div3">안녕하세요 DIV3입니다.</div>
+            <div id="div-wrap">
+                <div id="div4">안녕하세요 DIV4입니다.</div>
+                <div id="div5">안녕하세요 DIV5입니다.</div>
+            </div>
+        </div>
+    </body>
+</html>

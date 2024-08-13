@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition</title>
+        <style>
+            div:nth-child(1) {
+                width: 50px;
+                height: 50px;
+                background-color: brown;
+                /* transition: background-color 1s; */
+                transition: all 1s;
+            }
+
+            div:nth-child(1):hover {
+                background-color: red;
+                /* 투명도: 100%가 원본 */
+                opacity: 50%;
+            }
+
+            /* 2번째 DIV의 배경색은 brown */
+            /* width와 height는 100px */
+            /* 마우스를 올렸을 때 width는 200px로 변경 */
+            /* 이 때 3초에 걸쳐서 width가 늘어나게 스타일 적용 */
+            div:nth-child(2) {
+                width: 100px;
+                height: 100px;
+                /* transition: [대상] [걸리는 시간] [딜레이]*/
+                transition: all 3s 1s;
+                /* transition-property: width, height;
+                transition-duration: 3s, 1s;
+                transition-delay: 1s, 2s; */
+                background-color: rgb(174, 163, 163);
+            }
+
+            div:nth-child(2):hover {
+                width: 200px;
+                height: 200px;
+                transform: translateX(20px);
+            }
+
+            div:nth-child(3) {
+                width: 90px;
+                height: 130px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(90deg);
+                cursor: pointer;
+                transition: all 2s;
+            }
+
+            div:nth-child(3):hover {
+                transform: rotate(0);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+</html>

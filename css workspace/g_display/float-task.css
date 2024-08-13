@@ -1,0 +1,11 @@
+#image {
+    width: 1260px;
+    height: 305px;
+    margin: 0 auto;
+}
+
+.div-image {
+    width: 420px;
+    height: 305px;
+    float: left;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>overflow</title>
+        <style>
+            #banner {
+                width: 830px;
+                height: 130px;
+                border: 3px dotted darkviolet;
+                /* overflow */
+                /* 내용물이 넘쳤을 때 하고자하는 스타일을 줄 수 있다. */
+                overflow: hidden;
+            }
+
+            #banner-wrap {
+                width: 1660px;
+                height: 130px;
+                display: flex;
+            }
+
+            .banner img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="banner-wrap">
+                <div class="banner">
+                    <img
+                        src="https://ssl.pstatic.net/melona/libs/1504/1504344/74c0c03ab8cd2fad2f1d_20240808164440152.jpg"
+                    />
+                </div>
+                <div class="banner">
+                    <img
+                        src="https://ssl.pstatic.net/melona/libs/1504/1504344/d7245fbe7143988f4acb_20240711183005243_3.jpg"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-size: 35px;
+}
+
+#horizon {
+    border: 2px dashed brown;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+#wrap {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    border: 4px dotted blueviolet;
+}
+
+#container, #article {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+#container {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#article {
+    justify-content: flex-end;
+}
+
+.element {
+    width: 30px;
+    height: 30px;
+    background-color: dimgray;
+}

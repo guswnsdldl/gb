@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>z-index</title>
+        <style>
+            #container {
+                width: 500px;
+                height: 500px;
+                position: relative;
+                margin: 0 auto;
+                border: 2px dashed blue;
+            }
+
+            div.div {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+            }
+
+            /* absolute로 인해 겹쳐있는 요소의 */
+            /* z-index 기본값을 1로 설정한다. */
+            /* 이 때 앞에 보여질 요소는 z-index를 다른 요소의 값보다 크게 설정한다. */
+            #div1 {
+                background-color: brown;
+                z-index: 2;
+            }
+
+            #div2 {
+                background-color: aqua;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="div" id="div1"></div>
+            <div class="div" id="div2"></div>
+        </div>
+    </body>
+</html>
