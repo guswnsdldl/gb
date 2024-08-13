@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-190fc906603-1ff18b957e45f1c6": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"configurationType": "MANUAL",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {"oracle_thin-190fc906603-1ff18b957e45f1c6":{"SCOTT":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202407311501\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-190fc906603-1ff18b957e45f1c6\"\u003e\u003centity id\u003d\"1\" name\u003d\"BONUS\" fq-name\u003d\"SCOTT.BONUS\" order\u003d\"0\" font\u003d\"Segoe UI:9:0\" x\u003d\"260\" y\u003d\"808\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"DEPT\" fq-name\u003d\"SCOTT.DEPT\" order\u003d\"1\" font\u003d\"Segoe UI:9:0\" x\u003d\"1126\" y\u003d\"731\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"EMP\" fq-name\u003d\"SCOTT.EMP\" order\u003d\"2\" font\u003d\"Segoe UI:9:0\" x\u003d\"1501\" y\u003d\"773\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"SALGRADE\" fq-name\u003d\"SCOTT.SALGRADE\" order\u003d\"3\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"822\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK_DEPTNO\" fq-name\u003d\"SCOTT.EMP.FK_DEPTNO\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"3\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
