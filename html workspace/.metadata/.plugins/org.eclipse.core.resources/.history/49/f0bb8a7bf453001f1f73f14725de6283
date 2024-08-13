@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>join</title>
+</head>
+<body>
+<h1>회원가입</h1>
+<form>
+<div> 아이디
+<input type="text" name="user-id" placeholder="아이디" required><br>
+비밀번호
+<input type="password" name="user-password" placeholder="비밀번호">
+</div>
+<div> <p>이메일 주소 선택
+<input type="text" name="user-email" placeholder="이메일 입력"><fieldset>
+ <label><input type="radio" name="email" value="@gmail.com">
+            @gmail.com</label>
+  <label><input type="radio" name="email" value="@daum.com">
+            @daum.com</label>
+  <label><input type="radio" name="email" value="@kakao.com">
+            @kakao.com</label>
+  <label><input type="radio" name="email" value="@hanmail.com">
+            @hanmail.com</label>                      
+</fieldset>
+
+</div> 
+<div>
+<p>이름
+<input type="text" name="user-name" placeholder="홍길동" required><br>
+</div>
+<div><p>	
+생년월일 <input type="date">
+</div>
+
+<div><p>
+통신사 선택
+<select name="select-telecom">
+            <option value="" selected>통신사 선택</option>
+            <option value="computer">KT</option>
+            <option value="model">SKT</option>
+            <option value="nurse">LG U+</option>
+            <option value="music">KT 알뜰폰</option>
+            <option value="mechanic">SKT 알뜰폰</option>
+             <option value="mechanic">LG U+ 알뜰폰</option>
+   </select>         
+</div>
+<div>
+<p><fieldset>
+        <legend>선택(필수)</legend>
+          <label> <input type="radio" name="gender" value="여자">
+            여자
+         </label><label> <input type="radio" name="gender" value="남자">
+            남자
+         </label>  
+      </fieldset>
+</div>
+<div>
+<p><fieldset>
+        <legend>선택(필수)</legend>
+          <label> <input type="radio" name="from" value="korean">
+            내국인
+         </label><label> <input type="radio" name="from" value="foreigner">
+            외국인
+         </label>  
+      </fieldset>   
+</div>
+<div>
+<p><h3>핸드폰 번호 입력</h3>
+<input type="tel" name="user-telephone" placeholder="전화번호" value="010" required>
+</div>
+
+<div><p> 
+ <fieldset>
+<legend>약관 동의</legend>
+ <label> <input type="radio" name="agree" value="agree">
+            약관에 동의 하십니까?</label>
+</fieldset>		
+</div>
+<div>
+<p> <input type="button" value="인증요청" required>
+
+
+</div>
+
+</form>
+
+</body>
+</html>

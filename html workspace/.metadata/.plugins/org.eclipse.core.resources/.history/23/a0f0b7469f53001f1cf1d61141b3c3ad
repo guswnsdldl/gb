@@ -1,0 +1,49 @@
+<!--
+   병합
+   
+   colspan="합칠 열 개수"
+      좌에서 우로 합쳐지고 현재 행에만 적용
+      
+   rowspan="합칠 행 개수"
+      현재 행과 아래 행이 합쳐지고 다음 행이 없다면 적용 안됨
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   table, tr, td, th {
+      text-align: center;
+      width: 450px;
+      margin: 0 auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-size: 1.5rem;
+   }
+</style>
+
+</head>
+<body>
+ 		<tr>
+         <td>1</td>
+         <td>2</td>
+         <td>3</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td>5</td>
+         <td>6</td>
+         <td>7</td>
+         <td>8</td>
+      </tr>
+      <tr>
+         <td>9</td>
+         <td>10</td>
+         <td>11</td>
+         <td>12</td>
+      </tr>
+   </table>
+</body>
+</html>

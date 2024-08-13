@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지태그</title>
+</head>
+<body>
+	<!-- 브라우저에서는 로컬의 절대경로에 접근할 수 없도록 막아준다-->
+	<img src="" alt="">
+	<img src="images/a/d/icon1.png" width="100">
+	<img src="images/a/b/icon2.png" width="300">
+	<img src="images/a/icon4.png" width="200">
+	<img src="images/icon5.png" width="150">
+	<img src="webapp/c/icon3.png" width="50">
+</body>
+</html>

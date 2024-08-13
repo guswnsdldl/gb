@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>join</title>
+</head>
+<body>
+<h1>회원가입</h1>
+<form>
+<div> 아이디, 비밀번호
+<input type="text" name="user-id" placeholder="아이디" value="@naver.com" required><br>
+<input type="password" name="user-password" placeholder="비밀번호">
+</div>
+<div> 이메일 주소 선택
+<p><input type="text" name="user-email" placeholder="이메일 입력" value= required><fieldset>
+ <label><input type="radio" name="email" value="@gmail.com">
+            @gmail.com</label>
+  <label><input type="radio" name="email" value="@daum.com">
+            @daum.com</label>
+  <label><input type="radio" name="email" value="@kakao.com">
+            @kakao.com</label>
+  <label><input type="radio" name="email" value="@hanmail.com">
+            @hanmail.com</label>                      
+</fieldset>
+
+</div> 이름
+<div>
+<p><input type="text" name="user-name" placeholder="실명" value="user-name" required><br>
+</div>
+<div>	생년월일
+        <p> <input type="date">
+</div>
+
+<div>통신사 선택
+<p><select name="select-telecom">
+            <option value="" selected>통신사 선택</option>
+            <option value="computer">KT</option>
+            <option value="model">SKT</option>
+            <option value="nurse">LG U+</option>
+            <option value="music">KT 알뜰폰</option>
+            <option value="mechanic">SKT 알뜰폰</option>
+             <option value="mechanic">LG U+ 알뜰폰</option>
+   </select>         
+</div>
+<div>
+<p><fieldset>
+        <legend>선택(필수)</legend>
+          <label> <input type="radio" name="gender" value="여자">
+            여자
+         </label><label> <input type="radio" name="gender" value="남자">
+            남자
+         </label>  
+      </fieldset>
+</div>
+<div>
+<p><fieldset>
+        <legend>선택(필수)</legend>
+          <label> <input type="radio" name="from" value="내국인">
+            내국인
+         </label><label> <input type="radio" name="from" value="외국인">
+            외국인
+         </label>  
+      </fieldset>   
+</div>
+<div>
+<p><input type="tel" name="user-telephone" placeholder="전화번호" value="010" required>
+</div>
+
+</form>
+
+</body>
+</html>
